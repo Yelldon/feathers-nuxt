@@ -43,7 +43,7 @@ async function start() {
   }
 
   // Load app configuration
-  app.configure(configuration()).use(nuxt.render)
+  app.configure(configuration())
   // Enable security, CORS, compression, favicon and body parsing
   app.use(helmet())
   app.use(cors())
@@ -67,6 +67,9 @@ async function start() {
   app.configure(services)
   // Set up event channels (see channels.js)
   app.configure(channels)
+
+  // Render the Nuxt instance
+  app.use(nuxt.render)
 
   // Configure a middleware for 404s and the error handler
   app.use(express.notFound())
