@@ -54,7 +54,7 @@
     "eslint-config-standard": "^14.1.0",
     "feathers-knex": "^7.1.0",
     "helmet": "^3.21.2",
-    "knex": "^0.20.6",
+    "knex": "^2.4.0",
     "nuxt": "^2.11.0",
     "serve-favicon": "^2.5.0",
     "sqlite3": "^4.1.1",
